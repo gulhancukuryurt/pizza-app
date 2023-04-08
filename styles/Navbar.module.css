@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.container {
+    background-color:#000 ;
+    height: 80px;
+    padding: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid #f26d25 ;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact {
+    background-color: #f26d25;
+    height: 80px;
+    margin-left: 80px;
+    border-radius: 5px;
+}
+
+.contactmsg, .number {
+    margin-top: 5px;
+    padding: 8px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.number {
+    font-weight: bold;
+    color: #07021a;
+    margin-top: -4px;
+}
+.number:hover {
+    color: rgb(59, 4, 4);
+}
+
+.item {
+    flex: 1;
+}
+
+.item:nth-child(2){
+    flex: 3;
+
+}
+
+.list {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #fff;
+}
+
+.listItem {
+    padding: 10px;
+    margin: 45px;
+    font-weight: 50;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.listItem:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: #f26d25;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px #f8bd11;
+    
+}
+
+.userarea {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login, .cart,.signin  {
+    padding: 20px;
+    color: #f26d25;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+
+}
+.counter {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:#fff;
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.login:hover, 
+.cart:hover,
+.signin:hover {
+    color: #f8bd11;
+    
+}

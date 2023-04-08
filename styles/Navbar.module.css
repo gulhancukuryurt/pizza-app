@@ -10,6 +10,7 @@
     top: 0;
     border-bottom: 5px solid #f26d25 ;
     font-family: 'Montserrat', sans-serif;
+    z-index: 999;
 }
 .contact {
     background-color: #f26d25;

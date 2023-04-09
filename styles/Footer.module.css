@@ -1,0 +1,113 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #f26d25;
+    margin: 10px;
+    padding: 20px;
+}
+
+.menu {
+    padding: 10px;
+    width: 20%;
+}
+.menu li {
+    list-style: none;
+    padding: 5px;
+    color: #f26d25;
+    font-size: 1.1rem;
+    border-right: 1px solid #f8bd11;
+}
+
+.menu li:hover {
+    color: #f8bd11;
+} 
+
+.menudetails{
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #f26d25;
+    text-align: center;
+}
+.titleMenu {
+    padding: 5px;
+    margin-top: -20px;
+    color: #f26d25;
+    letter-spacing: 5px;
+}
+.menudetails li {
+    padding: 6px;
+    list-style: none;
+    font-size: 1rem;
+    color: #f8bd11;
+}
+
+.brands {
+    width: 30%;
+    padding: 5px;
+    border-right: 1px solid #f8bd11;
+    text-align: center;
+
+}
+
+.title {
+    padding: 5px;
+    margin-top: -15px;
+    color: #f26d25;
+    letter-spacing: 5px;
+
+}
+
+.brand{
+    padding: 13px;
+    color: #f8bd11;
+}
+
+.social {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact {
+    background-color: #f26d25;
+    width: 80%;
+    height: 50%;
+    margin-left: 80px;
+    border-radius: 5px;
+    padding: 25px;
+    margin-right: 40px;
+}
+.contactmsg{
+    font-size: 1.1rem;
+    padding: 5px;
+    letter-spacing: 4px;
+    color: #000;
+    font-weight: bold;
+}
+
+.number {
+    font-size: 1.4rem;
+    padding: 3px;
+}
+
+.socialmedia{
+    padding: 15px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    margin-left: 40px;
+    color: #f8bd11;
+}
+.icon:hover {
+    font-size: 1.5rem;
+    color: #f26d25;
+   
+}

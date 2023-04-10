@@ -92,3 +92,56 @@
     color: #f26d25;
 
 }
+
+.chooseadd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.titleadd {
+    color:#e99568;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+.extra {
+    display: flex;
+    flex-direction: row;
+}
+
+.option {
+    padding: 5px;
+    margin: 5px;
+    color: #f8bd11;
+    font-size: 1.2rem;
+}
+
+.checkbox {
+   width: 15px;
+   height: 15px;
+   
+}
+.addtocart {
+    margin-top: 10px;
+}
+
+.numberadd {
+    width: 50px;
+    height: 35px;
+    color: #f26d25;
+    border: 1px solid #f8bd11;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.button {
+    
+    color: #000;
+    background-color: #f8bd11;
+    font-size: 1.1rem;
+    padding: 5px;
+    margin: 10px;
+}

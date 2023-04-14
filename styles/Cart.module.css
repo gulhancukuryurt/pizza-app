@@ -1,0 +1,99 @@
+.container {
+    margin: 40px;
+    padding: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.left {
+  
+    flex: 2;
+}
+
+.right {
+ 
+    flex: 1;
+}
+
+.image {
+    position: relative;
+}
+
+.table {
+    width: 100%;
+    border-spacing:20px;
+}
+
+.tr {
+    font-weight: bold;
+    color: #f8bd11;
+    font-size: 1.2rem;
+ 
+}
+
+.name {
+    color: #f26d25;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f26d25;
+    padding: 20px;
+}
+
+.extra {
+    font-style: italic;
+    padding: 20px;
+}
+
+.price {
+    font-weight: bold;
+    padding: 20px;
+}
+
+.quantity {
+    font-size: 1.2rem;
+    color: #f8bd11;
+}
+
+.wrapper {
+    background-color: #f26d25;
+    width: 50%;
+    max-height: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.title {
+    padding: 10px;
+    margin-top: -30px;
+    letter-spacing: 5px;
+}
+
+.totalText {
+    padding: 4px;
+    margin-bottom: 4px;
+}
+.totalTextTitleTotal {
+    color: #000;
+}
+
+.button {
+    padding: 10px;
+    margin-bottom: -20px;
+    background-color: #f8bd11;
+    border: none;
+    color:#000;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100%;
+}

@@ -51,6 +51,7 @@ const Cart = () => {
           </div>
           <div className={styles.totalText}>
           <b className={styles.totalTextTitleTotal}>Total: $79.60 </b>
+          <hr></hr>
           </div>
           <button className={styles.button}>CHECKOUT NOW!</button>
          </div>

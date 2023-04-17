@@ -84,6 +84,7 @@
 }
 .totalTextTitleTotal {
     color: #000;
+    font-size: 1.5rem;
 }
 
 .button {
@@ -96,4 +97,5 @@
     font-weight: bold;
     letter-spacing: 2px;
     width: 100%;
+    cursor: pointer;
 }

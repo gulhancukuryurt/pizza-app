@@ -8,7 +8,7 @@ const Product = () => {
         id: 1,
         img: "/img/pizza4.jpg",
         name: "CAMPAGNOLA",
-        price: [19.9, 23.9, 27.9],
+        price: [19.99, 23.99, 27.99],
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu scelerisque magna. Fusce at augue vel eros porttitor vestibulum. In diam ante, tempor ac nisi non, cursus tincidunt tortor."
     };
 

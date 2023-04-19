@@ -8,18 +8,19 @@ const PizzaCard = () => {
   return (
     
     <div className={styles.container}>
-     <div className={styles.pizzaimg}>
-      <Image src="/img/pizzalist1.png" alt=""  width ="150" height="150"/>
+      <div className={styles.card}>
+     <div className={styles.imgBx}>
+      <Image src="/img/pizzalist1.png" className={styles.img} alt=""  width ="150" height="150"/>
      </div>
-     <h2 className={styles.title}>FIORI DI ZUCCA</h2>
-     <span className={styles.price}>$19.90</span>
-     <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
-          <button className={styles.pricebtn}>BUY NOW <FaShoppingCart className={styles.icon}/></button>
-        
+     <div className={styles.contentBx}>
+     <h2 className={styles.card_title}>FIORI DI ZUCCA</h2>
+     <p className={styles.card_body}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
+     <div className={styles.card_price}>$19.90</div>        
+     </div>
+    
+     <button className={styles.button} href="#">Buy Now</button>
+     </div>
       </div>
-     
-     
-
   )
 }
 

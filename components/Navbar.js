@@ -16,7 +16,6 @@ const Navbar = () => {
         <div className={styles.item}>
           <ul className={styles.list}>
             <li className={styles.listItem}><FaPizzaSlice/> Home</li>
-            <li className={styles.listItem}><FaPizzaSlice/> Product</li>
             <li className={styles.listItem}><FaPizzaSlice/> Menu</li>
             <li className={styles.listItem}><FaPizzaSlice/> Blog</li>
             <li className={styles.listItem}><FaPizzaSlice/> Contact</li>

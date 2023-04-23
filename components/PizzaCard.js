@@ -18,7 +18,7 @@ const PizzaCard = () => {
      <div className={styles.card_price}>$19.90</div>        
      </div>
     
-     <button className={styles.button} href="#">Buy Now</button>
+     <button className={styles.button} >BUY NOW <FaShoppingCart/></button>
      </div>
       </div>
   )

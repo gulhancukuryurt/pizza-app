@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Featured from '@/components/Featured'
 import PizzaList from '@/components/PizzaList'
-import Product from './product/[id]'
+import Blog from '@/components/Blog'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Featured/>
       <PizzaList/>
-      
+      <Blog/>
     </div>
 
   )

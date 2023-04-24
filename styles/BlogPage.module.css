@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.title {
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    color:#f8bd11;
+    font-weight: bold;
+    font-size: 2.5rem;
+    background-color: #5a5135;
+    width: 98%;
+    text-align: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

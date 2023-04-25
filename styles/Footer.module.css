@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 .container {
     width: 100%;
     display: flex;
@@ -19,6 +20,7 @@
     color: #f26d25;
     font-size: 1.1rem;
     border-right: 1px solid #f8bd11;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu li:hover {
@@ -42,6 +44,7 @@
     list-style: none;
     font-size: 1rem;
     color: #f8bd11;
+    font-family: 'Roboto', sans-serif;
 }
 
 .brands {
@@ -57,12 +60,14 @@
     margin-top: -15px;
     color: #f26d25;
     letter-spacing: 5px;
+    
 
 }
 
 .brand{
     padding: 13px;
     color: #f8bd11;
+    font-family: 'Roboto', sans-serif;
 }
 
 .social {
@@ -82,6 +87,7 @@
     border-radius: 5px;
     padding: 25px;
     margin-right: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 .contactmsg{
     font-size: 1.1rem;

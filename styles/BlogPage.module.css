@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 .container {
     width: 100%;
     padding: 20px 20px;
@@ -17,6 +18,7 @@
     background-color: #5a5135;
     width: 98%;
     text-align: center;
+    font-family: 'Special Elite', cursive;
 }
 
 .wrapper {

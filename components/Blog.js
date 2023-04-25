@@ -10,7 +10,7 @@ const Blog = () => {
             <div className={styles.card}>
                 <div className={styles.left}>
                     <div className={styles.card_img}>
-                        <Image src="/img/pizza.webp" className={styles.img} width={290} height={280}></Image>
+                        <Image src="/img/pizza.webp" className={styles.img} width={290} height={340}></Image>
                     </div>
                     <a href='' className={styles.card_link}></a>
                 </div>

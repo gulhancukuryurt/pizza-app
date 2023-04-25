@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.css'
 import Featured from '@/components/Featured'
 import PizzaList from '@/components/PizzaList'
 import BlogPage from '@/components/BlogPage'
+import Contact from '@/components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Featured/>
       <PizzaList/>
       <BlogPage/>
+      <Contact/>
     </div>
 
   )

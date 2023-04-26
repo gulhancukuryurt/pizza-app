@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from '../styles/Navbar.module.css'
 import Image from 'next/image'
-import { FaUserAlt,FaShoppingBasket, FaUserPlus,FaPizzaSlice,FaPhoneAlt} from "react-icons/fa";
+import { FaUserAlt,FaShoppingBasket,FaBars, FaUserPlus,FaPizzaSlice,FaPhoneAlt} from "react-icons/fa";
 
 
 const Navbar = () => {
+ 
   return (
     <div className={styles.container}>
       
@@ -13,7 +14,7 @@ const Navbar = () => {
           <Image src="/img/logo.png" width="90" height="70"></Image>
         </div>
         </div>
-        <div className={styles.item}>
+        <div className={styles.item }>
           <ul className={styles.list}>
             <li className={styles.listItem}><FaPizzaSlice/> Home</li>
             <li className={styles.listItem}><FaPizzaSlice/> Menu</li>

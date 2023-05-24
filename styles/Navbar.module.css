@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .container {
-    background-color:#000 ;
+    background-color: #000;
     height: 80px;
     padding: 3.2rem;
     display: flex;
@@ -8,10 +9,11 @@
     justify-content: space-between;
     position: sticky;
     top: 0;
-    border-bottom: 5px solid #f26d25 ;
+    border-bottom: 5px solid #f26d25;
     font-family: 'Montserrat', sans-serif;
     z-index: 999;
 }
+
 .contact {
     background-color: #f26d25;
     height: 80px;
@@ -19,7 +21,8 @@
     border-radius: 5px;
 }
 
-.contactmsg, .number {
+.contactmsg,
+.number {
     margin-top: 5px;
     padding: 8px;
     text-align: center;
@@ -31,6 +34,7 @@
     color: #07021a;
     margin-top: -4px;
 }
+
 .number:hover {
     color: rgb(59, 4, 4);
 }
@@ -39,9 +43,8 @@
     flex: 1;
 }
 
-.item:nth-child(2){
+.item:nth-child(2) {
     flex: 3;
-
 }
 
 .list {
@@ -58,6 +61,7 @@
     font-weight: 50;
     font-size: 1.2rem;
     text-align: center;
+    border: none;
 }
 
 .listItem:hover {
@@ -67,7 +71,7 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px #f8bd11;
-    
+    border: none;
 }
 
 .userarea {
@@ -76,7 +80,9 @@
     justify-content: flex-end;
 }
 
-.login, .cart,.signin  {
+.login,
+.cart,
+.signin {
     padding: 20px;
     color: #f26d25;
     font-size: 1.5rem;
@@ -85,8 +91,8 @@
 
 .cart {
     position: relative;
-
 }
+
 .counter {
     position: absolute;
     top: 5px;
@@ -94,7 +100,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color:#fff;
+    background-color: #fff;
     text-align: center;
     font-size: 1rem;
     display: flex;
@@ -102,25 +108,61 @@
     justify-content: center;
     font-weight: bold;
 }
-.login:hover, 
+
+.login:hover,
 .cart:hover,
 .signin:hover {
     color: #f8bd11;
-    
 }
 
-@media only screen and (max-width: 992px) {
-   .listItem {
-    font-size: 15px;
-    margin-left: -160px; 
-    padding: 70px;
-   }
+.menuIcon {
+    display: none;
+}
 
-   .listItem:hover{
-    opacity: 0;
-   }
+.menuItems {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 988px) {
+    .menuIcon {
+        display: block;
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+    .menuItems {
+        display: none;
+    }
+
+    .menuItems.open {
+        position: absolute;
+        top: 108px;
+        right: 50px;
+        left: 50px;
+        background-color: #f26d25;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .number {
+        font-weight: bold;
+        color: #07021a;
+        text-align: center;
+        letter-spacing: 4px;
+        font-size: 16px;
+    }
 
     .contact {
-        margin-left: -350px;
+        background-color: #f26d25;
+        height: 50px;
+        margin-left: 80px;
+        border-radius: 5px;
+    }
+    
+    
+    .contactmsg {
+        display: none;
     }
 }

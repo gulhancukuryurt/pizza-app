@@ -61,7 +61,6 @@
     font-weight: 50;
     font-size: 1.2rem;
     text-align: center;
-    border: none;
 }
 
 .listItem:hover {
@@ -71,8 +70,9 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px #f8bd11;
-    border: none;
+    border: 0;
 }
+
 
 .userarea {
     display: flex;
@@ -125,7 +125,7 @@
 }
 
 
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 1388px) {
     .menuIcon {
         display: block;
         font-size: 2rem;

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 import styles from '../styles/Navbar.module.css';
 import Image from 'next/image';
 import { FaUserAlt, FaShoppingBasket, FaBars, FaUserPlus, FaPizzaSlice, FaPhoneAlt } from "react-icons/fa";
@@ -22,16 +23,38 @@ const Navbar = () => {
       </div>
       <div className={`${styles.item} ${styles.menuItems} ${isMenuOpen ? styles.open : ''}`}>
         <ul className={styles.list}>
-          <li className={styles.listItem}><FaPizzaSlice /> Home</li>
-          <li className={styles.listItem}><FaPizzaSlice /> Menu</li>
-          <li className={styles.listItem}><FaPizzaSlice /> Blog</li>
-          <li className={styles.listItem}><FaPizzaSlice /> Contact</li>
+          <li className={styles.listItem}>
+            <Link href="/">
+             
+                <FaPizzaSlice /> Home
+              
+            </Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href="/menu">
+             
+                <FaPizzaSlice /> Menu
+              
+            </Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href="/blog">
+             
+                <FaPizzaSlice /> Blog
+              
+            </Link>
+          </li>
+          <li className={styles.listItem}>
+            <Link href="/contact">
+             
+                <FaPizzaSlice /> Contact
+              
+            </Link>
+          </li>
         </ul>
       </div>
       <div className={styles.contact}>
-        <div className={styles.contactmsg}>
-          ORDER NOW
-        </div>
+        <div className={styles.contactmsg}>ORDER NOW</div>
         <div className={styles.number}>
           <FaPhoneAlt fontSize={"15px"} /> 444 55 66
         </div>

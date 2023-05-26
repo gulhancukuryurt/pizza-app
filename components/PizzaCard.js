@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/PizzaCard.module.css'
 import Image from 'next/image'
 import { FaShoppingCart } from "react-icons/fa";
+import Link from 'next/link';
 
 
 const PizzaCard = () => {
@@ -18,7 +19,9 @@ const PizzaCard = () => {
      <div className={styles.card_price}>$19.90</div>        
      </div>
     
-     <button className={styles.button} >BUY NOW <FaShoppingCart/></button>
+   <Link href="/cart">
+   <button className={styles.button} >BUY NOW <FaShoppingCart/></button>
+   </Link>  
      </div>
       </div>
   )

@@ -1,0 +1,125 @@
+{
+    "pizzas": [
+      {
+        "name": "Margherita",
+        "description": "Classic Italian pizza with tomato sauce, mozzarella cheese, and basil leaves.",
+        "price": 10.99,
+        "image": "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/4F1526F0-0A46-4C87-A3D5-E80AD76C0D70/Derivates/df9a8be7-6ab2-4d5a-8c4d-6cbe8aceda72.jpg",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Pepperoni",
+        "description": "Traditional pizza topped with pepperoni slices and mozzarella cheese.",
+        "price": 12.99,
+        "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60",
+        "category": "meat"
+      },
+      {
+        "name": "Vegetarian",
+        "description": "A delicious blend of fresh vegetables including bell peppers, mushrooms, onions, and olives.",
+        "price": 11.99,
+        "image": "https://cdn.loveandlemons.com/wp-content/uploads/2023/02/vegetarian-pizza.jpg",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Hawaiian",
+        "description": "Sweet and savory pizza with ham, pineapple chunks, and mozzarella cheese.",
+        "price": 13.99,
+        "image": "https://www.allrecipes.com/thmb/v1Xi2wtebK1sZwSJitdV4MGKl1c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hawaiian-pizza-ddmfs-3x2-132-450eff04ad924d9a9eae98ca44e3f988.jpg",
+        "category": "meat"
+      },
+      {
+        "name": "Quattro Formaggi",
+        "description": "A cheese lover's delight with a combination of four cheeses: mozzarella, gorgonzola, fontina, and parmesan.",
+        "price": 14.99,
+        "image": "https://travelshelper.com/wp-content/uploads/2022/10/Pizza-QUATTRO-FORMAGGI-Italian-National-Food-By-Travel-S-Helper.jpg",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Mediterranean",
+        "description": "Mouthwatering pizza with Mediterranean flavors including feta cheese, olives, sun-dried tomatoes, and fresh herbs.",
+        "price": 13.99,
+        "image": "https://goop-img.com/wp-content/uploads/2017/10/MeditterraneanCauliflowerPizza-1-1.jpg",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Buffalo Chicken",
+        "description": "Pizza with spicy buffalo sauce, grilled chicken, and ranch dressing.",
+        "price": 13.99,
+        "image": "https://hips.hearstapps.com/hmg-prod/images/190226-buffalo-chicken-pizza-370-1552084943.jpg",
+        "category": "meat"
+      },
+      {
+        "name": "Chicken Alfredo",
+        "description": "Creamy Alfredo sauce, grilled chicken, and mozzarella cheese on a thin crust.",
+        "price": 13.99,
+        "image": "https://belleofthekitchen.com/wp-content/uploads/2014/06/IMG_5797.jpg",
+        "category": "meat"
+      },
+      {
+        "name": "Vegan Delight",
+        "description": "Vegan pizza with plant-based cheese, fresh vegetables, and a gluten-free crust.",
+        "price": 12.99,
+        "image": "https://dolcecarini.com/wp-content/uploads/2014/07/veggieDelite.jpg?6bfec1&6bfec1",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Truffle Mushroom",
+        "description": "Pizza topped with truffle oil, wild mushrooms, caramelized onions, and fontina cheese.",
+        "price": 14.99,
+        "image": "https://images.squarespace-cdn.com/content/v1/55be995de4b071c106b3b4c0/1607620549016-GKSGISFJAM5R01SSUT9T/Truffle+Mushroom+and+Ricotta+Pizza+-+Eat+Cho+Food+Blog?format=1000w",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Spinach and Feta",
+        "description": "Pizza with garlic-infused olive oil, spinach, feta cheese, and black olives.",
+        "price": 11.99,
+        "image": "https://cookgem.com/wp-content/uploads/2021/11/Spinach-Feta-Pizza-8.jpg",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Pesto Primavera",
+        "description": "Pizza topped with pesto sauce, fresh tomatoes, bell peppers, zucchini, and mozzarella cheese.",
+        "price": 12.99,
+        "image": "https://images-gmi-pmc.edge-generalmills.com/1422c846-5145-4c1c-93a3-56cfb26940bd.jpg",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Sausage and Mushroom",
+        "description": "Pizza with Italian sausage, sautéed mushrooms, and melted provolone cheese.",
+        "price": 12.99,
+        "image": "https://images-gmi-pmc.edge-generalmills.com/bc4aee6f-72c2-4a15-9081-70cd39d054c8.jpg",
+        "category": "meat"
+      },
+      {
+        "name": "Barbecue Bacon",
+        "description": "Pizza topped with barbecue sauce, crispy bacon, red onions, and cheddar cheese.",
+        "price": 13.99,
+        "image": "https://img.taste.com.au/6w2ddyI5/taste/2019/07/bbq-chicken-bacon-pizza-151485-1.jpg",
+        "category": "meat"
+      },
+      {
+        "name": "Greek Style",
+        "description": "Pizza with kalamata olives, red onions, cherry tomatoes, feta cheese, and a drizzle of olive oil.",
+        "price": 12.99,
+        "image": "https://www.bacinos.com/wp-content/uploads/2021/06/32-Best-Greek-Pizza-Recipes.jpg",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Caprese",
+        "description": "Pizza topped with fresh mozzarella cheese, sliced tomatoes, basil leaves, and balsamic glaze.",
+        "price": 11.99,
+        "image": "https://violifefoods.com/wp-content/uploads/2022/06/caprese-pizza-1920x850.jpg",
+        "category": "vegetarian"
+      },
+      {
+        "name": "Bacon Cheeseburger",
+        "description": "Pizza inspired by a classic cheeseburger with ground beef, crispy bacon, cheddar cheese, and pickles.",
+        "price": 13.99,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrZ_QVpa-aWOqVy4-KLUBXfubWLR1VPYBXQA&usqp=CAU",
+        "category": "meat"
+      }
+     
+    ]
+  }
+  

@@ -34,24 +34,24 @@ function Menu() {
       <h2 className={styles.title}>Menü List</h2>
       <div className={styles.categories}>
         <button
-          className={`${styles.category} ${selectedCategory === 'all' ? styles.active : ''}`}
+          className={`${styles.category} ${selectedCategory === 'all' ? styles.focus : ''}`}
           onClick={() => handleCategoryChange('all')}
         >
           All
         </button>
         <button
-          className={`${styles.category} ${selectedCategory === 'vegetarian' ? styles.active : ''}`}
+          className={`${styles.category} ${selectedCategory === 'vegetarian' ? styles.focus : ''}`}
           onClick={() => handleCategoryChange('vegetarian')}
         >
          Vegetarian
         </button>
         <button
-          className={`${styles.category} ${selectedCategory === 'meat' ? styles.active : ''}`}
+          className={`${styles.category} ${selectedCategory === 'meat' ? styles.focus : ''}`}
           onClick={() => handleCategoryChange('meat')}
         >
           Meat
         </button>
-        {/* Diğer kategori düğmeleri buraya ekleyebilirsiniz */}
+        
       </div>
       <div className={styles.cards}>
         {filterPizzasByCategory().map((pizza, id) => (
@@ -68,7 +68,7 @@ function Menu() {
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
-            className={`${styles.page} ${currentPage === index + 1 ? styles.active : ''}`}
+            className={`${styles.page} ${currentPage === index + 1 ? styles.focus : ''}`}
             onClick={() => handlePageChange(index + 1)}
           >
             {index + 1}

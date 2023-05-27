@@ -15,7 +15,9 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.logo}>
+        <Link href="/">
           <Image src="/img/logo.png" width="90" height="70" />
+          </Link>
         </div>
       </div>
       <div className={`${styles.item} ${styles.menuIcon}`} onClick={toggleMenu}>

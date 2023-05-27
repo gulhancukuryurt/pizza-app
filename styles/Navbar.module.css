@@ -150,21 +150,23 @@
         animation-duration: 0.3s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
-      }
-      
-      @keyframes slideIn {
-        from {
-          opacity: 0;
-          transform: translateY(-20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      
+    }
 
-    .contactmsg, .number {
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .contactmsg,
+    .number {
         font-weight: bold;
         color: #07021a;
         text-align: center;
@@ -178,7 +180,84 @@
         margin-left: 80px;
         border-radius: 5px;
     }
-    
-    
-    
+
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .menuIcon {
+        display: block;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+
+    .menuItems {
+        display: none;
+    }
+
+    .list {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        color: #fff;
+    }
+
+    .listItem {
+        padding: 10px;
+        margin: 25px;
+        font-weight: 50;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .login,
+    .cart,
+    .signin {
+        padding: 15px;
+        color: #f26d25;
+        font-size: 1.4rem;
+        cursor: pointer;
+       
+    }
+
+    .menuItems.open {
+        position: absolute;
+        top: 105px;
+        right: 50px;
+        left: 50px;
+        background-color: #f26d25;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transform: translateY(-20px);
+        animation-name: slideIn;
+        animation-duration: 0.3s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+
+
+    .contact {
+        display: none;
+    }
+
+
+
 }

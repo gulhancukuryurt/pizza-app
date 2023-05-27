@@ -117,3 +117,41 @@
     color: #f26d25;
    
 }
+
+@media screen and (max-width: 700px) {
+    .menudetails {
+        display: none;
+    }
+    .brands {
+        display: none;
+    }
+
+    .menu {
+        width: 40%;
+    }
+
+    .social {
+        width: 50%;
+    }
+
+    .contact {
+        background-color: #f26d25;
+        width: 90%;
+        height: 50%;
+        margin-left: 10px;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .socialmedia{
+        padding: 15px;
+        width: 90%;
+        margin-left: -43px;
+        color: #f8bd11;
+
+    }
+    .icon  {
+       padding: 3px;
+       
+    }
+}

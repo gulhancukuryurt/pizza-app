@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .title {
@@ -21,9 +23,14 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 4px 5px 0 rgba(75, 74, 72, 0.5), 0 6px 10px 0 rgba(58, 54, 54, 0.623);
 
   }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px 0 rgba(119, 117, 114, 0.5), 0 6px 20px 0 rgba(95, 89, 89, 0.623);
+
+  }
+  
   
   .card .pizzaimg {
     width: 100%;    
@@ -35,7 +42,9 @@
   .card .pizzaname {
     margin-bottom: 5px;
     background-color: #f57c00;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    padding: 3px;
   }
   
   .card .desc {
@@ -62,6 +71,10 @@
     padding: 10px;
     margin-bottom: 20px;
     width: 70%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+
   }
   
   .card .buy:hover {
@@ -78,6 +91,8 @@
 .pagination .page {
     padding: 5px;
     margin: 10px;
+    border: 1px solid #f57c00;
+
 }
 
 .categories {
@@ -88,7 +103,29 @@
 }
 
 .categories .category {
-  padding: 10px;
-  width: 10%;
+  padding: 13px;
+  width: 15%;
   margin: 10px;
+  border: 1px solid #f57c00;
+}
+
+.categories .category:focus {
+  background-color: #f57c00;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: calc(80% - 50px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+
+  }
+  .categories .category {
+    padding: 10px;
+    width: 40%;
+    margin: 10px;
+    border: 1px solid #f57c00;
+  }
+  
 }

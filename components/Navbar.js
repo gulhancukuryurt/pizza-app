@@ -63,9 +63,12 @@ const Navbar = () => {
       </div>
       <div className={styles.item}>
         <div className={styles.userarea}>
+          <Link href="/login">
+         
           <div className={styles.login}>
             <FaUserAlt />
           </div>
+          </Link>
           <div className={styles.cart}>
             <FaShoppingBasket />
             <div className={styles.counter}>2</div>

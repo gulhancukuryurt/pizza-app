@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.left {
+    width: 40%;
+}
+
+.right {
+    width: 20%;
+}
+.img {
+    margin: 10px;
+}
+.title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.email, .password {
+   margin-bottom: 20px;
+}
+
+.passwordArea, .emailArea {
+    padding: 5px;
+    width: 360px;
+}
+
+.loginprocses {
+    width: 100%;
+    display: flex;
+}
+
+.remember, .passwordremember {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.login {
+    width: 100%;
+    padding: 10px;
+    background-color: #f26d25;
+    border: none;
+    cursor: pointer;
+}
+
+.loginMessage {
+    font-size: 1.3rem;
+    color: #f26d25;
+    margin-top: 20px;
+}

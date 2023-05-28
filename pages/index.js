@@ -6,6 +6,8 @@ import PizzaList from '@/components/PizzaList'
 import BlogPage from '@/components/BlogPage'
 import Contact from '@/components/Contact'
 import Subscribe from '@/components/Subscribe'
+import TopButton from '@/components/TopButton'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +26,7 @@ export default function Home() {
       <BlogPage/>
       <Contact/>
       <Subscribe/>
+      <TopButton/>
     </div>
 
   )

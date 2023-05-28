@@ -21,10 +21,11 @@
     font-size: 3.3rem;
     font-family: 'Special Elite', cursive;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 .desc {
-    width: 50%;
+    width: 60%;
     padding: 30px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -63,8 +64,10 @@
     top: 5px;
     cursor: pointer;
   }
+
   .mailForm {
     position: relative;
     display: inline-block;
     width: 45%;
   }
+ 

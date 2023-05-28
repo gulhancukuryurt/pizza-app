@@ -59,8 +59,9 @@
     font-size: 2rem;
     padding: 5px;
     margin-bottom: 5px;
+    position: relative;
+
   }
-  
   .card .buy {
     padding: 10px 20px;
     background-color: #ff9800;
@@ -74,8 +75,10 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     letter-spacing: 4px;
-
+    position: sticky;
+    bottom: 20px;
   }
+  
   
   .card .buy:hover {
     background-color: #f57c00;

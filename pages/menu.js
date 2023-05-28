@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styles from '../styles/Menu.module.css';
 import menuPizza from './menu.json';
 import Image from 'next/image';
+import TopButton from '@/components/TopButton'
 
 function Menu() {
   const itemsPerPage = 9; // Her sayfada kaç pizza görüntüleneceğini belirlendi
@@ -75,6 +76,7 @@ function Menu() {
           </button>
         ))}
       </div>
+      <TopButton/>
     </div>
   );
 }

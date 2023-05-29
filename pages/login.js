@@ -14,14 +14,15 @@ function Login() {
 
   const onSubmit = (values) => {
     if (values.email === 'gcukuryurt@gmail.com' && values.password === '1234') {
-      setLoginMessage('Giriş Başarılı');
+      setLoginMessage(`Welcome ${values.email}`);
+      history.push('/anasayfa');
     }
     if (values.rememberMe) {
       localStorage.setItem('email', values.email);
       localStorage.setItem('password', values.password);
     }
     else {
-      setLoginMessage('Giriş Başarısız');
+      setLoginMessage('Sorry, information is not correct!');
     }
   };
 
@@ -29,11 +30,11 @@ function Login() {
     const errors = {};
 
     if (!values.email) {
-      errors.email = 'Email alanı boş bırakılamaz';
+      errors.email = 'Email field cannot be left blank';
     }
 
     if (!values.password) {
-      errors.password = 'Parola alanı boş bırakılamaz';
+      errors.password = 'Password field cannot be left blank';
     }
 
     return errors;
@@ -49,24 +50,22 @@ function Login() {
         <Formik initialValues={initialValues} onSubmit={onSubmit} validate={validateForm}>
           <Form>
             <div className={styles.email}>
-              <label className={styles.label} htmlFor="email">
-                E-mail
-              </label>
+              <label className={styles.label} htmlFor="email">E-mail </label>
               <Field className={styles.emailArea} type="email" id="email" name="email" />
               <ErrorMessage name="email" component="div" />
             </div>
             <div className={styles.password}>
-              <label htmlFor="password">Password</label>
+              <label className={styles.label} htmlFor="password">Password</label>
               <Field className={styles.passwordArea} type="password" id="password" name="password" />
               <ErrorMessage name="password" component="div" />
             </div>
             <div className={styles.loginprocses}>
               <div className={styles.remember}>
                 <Field type="checkbox" id="rememberMe" name="rememberMe" />
-                <label htmlFor="rememberMe"> Beni Hatırla</label>
+                <label htmlFor="rememberMe"> Remember me</label>
               </div>
               <div className={styles.passwordremember}>
-                <label htmlFor="forgotPassword">Parolamı Unuttum</label>
+                <label  htmlFor="forgotPassword">Forgot Password</label>
               </div>
             </div>
             <button className={styles.login} type="submit">

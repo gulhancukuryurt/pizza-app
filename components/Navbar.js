@@ -73,9 +73,12 @@ const Navbar = () => {
             <FaShoppingBasket />
             <div className={styles.counter}>2</div>
           </div>
+          <Link href="/sign">
           <div className={styles.signin}>
             <FaUserPlus />
           </div>
+          </Link>
+         
         </div>
       </div>
     </div>

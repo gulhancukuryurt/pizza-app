@@ -46,7 +46,9 @@ function Sign() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
+      <div className={styles.imgWrapper}>
         <Image className={styles.img} src="/img/pizzarest2.webp" width={600} height={700} />
+        </div>
       </div>
       <div className={styles.right}>
         <h2 className={styles.title}>Sign In</h2>
@@ -106,7 +108,8 @@ function Sign() {
             </button>
           </Form>
         </Formik>
-      </div>
+        </div>
+        
     </div>
   );
 }

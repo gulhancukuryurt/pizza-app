@@ -67,3 +67,7 @@
 .btn:hover { 
     box-shadow: 5px 5px #dba80e;
 }
+
+.address {
+    font-size: 2rem;
+}

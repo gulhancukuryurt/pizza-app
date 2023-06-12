@@ -11,9 +11,6 @@
         box-sizing: inherit;
     }
 }
-
-
-
 ._body {
     display: flex;
     justify-content: center;
@@ -98,12 +95,12 @@
       text-decoration: none;
       transition: .3s;
       position: relative;
-      /* Add position: relative to the button */
     }
   
     .card_button:hover {
       color: rgb(41, 36, 36);
       background-color: #f26d25;
+      cursor: pointer;
     }
   }
   

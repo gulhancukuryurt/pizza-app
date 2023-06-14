@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 import styles from '../styles/Footer.module.css'
 import {FaPizzaSlice,FaCaretRight,FaPhoneAlt,FaInstagram,FaYoutube,FaFacebook} from "react-icons/fa";
 
@@ -8,11 +9,18 @@ const Footer = () => {
       <div className={styles.menu}>
         
         <ul>
+          <Link href="/">
           <li><FaPizzaSlice color='#f8bd11'/> Home</li>
-          <li><FaPizzaSlice color='#f8bd11'/> Product</li>
+          </Link>
+          <Link href="/menu">
           <li><FaPizzaSlice color='#f8bd11'/> Menu</li>
+          </Link>
+          <Link href="/blog">
           <li><FaPizzaSlice color='#f8bd11'/> Blog</li>
+          </Link>
+          <Link href="/contact">
           <li><FaPizzaSlice color='#f8bd11'/> Contact</li>
+          </Link>
         </ul>
       </div>
       <div className={styles.menudetails}>

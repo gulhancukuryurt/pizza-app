@@ -3,21 +3,27 @@ import styles from '../styles/Menu.module.css';
 import menuPizza from './menu.json';
 import Image from 'next/image';
 import TopButton from '@/components/TopButton'
+import { useRouter } from 'next/router';
+
 
 function Menu() {
-  const itemsPerPage = 9; // Her sayfada kaç pizza görüntüleneceğini belirlendi
+  const itemsPerPage = 9;
   const totalPages = Math.ceil(menuPizza.pizzas.length / itemsPerPage);
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedCategory, setSelectedCategory] = useState('all'); // Varsayılan olarak tüm kategori
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [cartItems, setCartItems] = useState([]);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
+  const router = useRouter();
 
   // Kategorilere göre pizzaları filtrelemek için bir fonksiyon
   const filterPizzasByCategory = () => {
     if (selectedCategory === 'all') {
       return menuPizza.pizzas.slice(startIndex, endIndex);
     } else {
-      return menuPizza.pizzas.filter((pizza) => pizza.category === selectedCategory).slice(startIndex, endIndex);
+      return menuPizza.pizzas
+        .filter((pizza) => pizza.category === selectedCategory)
+        .slice(startIndex, endIndex);
     }
   };
 
@@ -29,6 +35,17 @@ function Menu() {
     setCurrentPage(1); // Kategori değiştikçe sayfayı sıfırla
     setSelectedCategory(category);
   };
+
+  const addToCart = (pizzaItem) => {
+    const items = JSON.parse(localStorage.getItem('cartItems')) || [];
+    items.push(pizzaItem);
+    localStorage.setItem('cartItems', JSON.stringify(items));
+    setCartItems(items); // Update the cartItems state with the updated array
+  
+    router.push('/cart');
+  };
+  
+
 
   return (
     <div className={styles.container}>
@@ -44,7 +61,7 @@ function Menu() {
           className={`${styles.category} ${selectedCategory === 'vegetarian' ? styles.focus : ''}`}
           onClick={() => handleCategoryChange('vegetarian')}
         >
-         Vegetarian
+          Vegetarian
         </button>
         <button
           className={`${styles.category} ${selectedCategory === 'meat' ? styles.focus : ''}`}
@@ -52,7 +69,7 @@ function Menu() {
         >
           Meat
         </button>
-        
+
       </div>
       <div className={styles.cards}>
         {filterPizzasByCategory().map((pizza, id) => (
@@ -61,8 +78,10 @@ function Menu() {
             <h3 className={styles.pizzaname}>{pizza.name}</h3>
             <h4 className={styles.desc}>{pizza.description}</h4>
             <h2 className={styles.price}>$ {pizza.price}</h2>
-            <button className={styles.buy}>Buy Now</button>
-          </div>
+            <button className={styles.buy} onClick={() => addToCart(pizza)}>
+              Buy Now
+            </button>         
+             </div>
         ))}
       </div>
       <div className={styles.pagination}>
@@ -76,7 +95,7 @@ function Menu() {
           </button>
         ))}
       </div>
-      <TopButton/>
+      <TopButton />
     </div>
   );
 }

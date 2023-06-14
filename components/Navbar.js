@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from '../styles/Navbar.module.css';
 import Image from 'next/image';
@@ -6,6 +6,25 @@ import { FaUserAlt, FaShoppingBasket, FaBars, FaUserPlus, FaPizzaSlice, FaPhoneA
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [itemCount, setItemCount] = useState(0);
+
+  useEffect(() => {
+    const storedItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    setItemCount(storedItems.length);
+
+    const handleStorageChange = (event) => {
+      if (event.key === 'cartItems') {
+        const updatedItems = JSON.parse(event.newValue) || [];
+        setItemCount(updatedItems.length);
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,8 +34,8 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.item}>
         <div className={styles.logo}>
-        <Link href="/">
-          <Image src="/img/logo.png" width="90" height="70" />
+          <Link href="/">
+            <Image src="/img/logo.png" width="90" height="70" />
           </Link>
         </div>
       </div>
@@ -27,30 +46,22 @@ const Navbar = () => {
         <ul className={styles.list}>
           <li className={styles.listItem}>
             <Link href="/">
-             
-                <FaPizzaSlice /> Home
-              
+              <FaPizzaSlice /> Home
             </Link>
           </li>
           <li className={styles.listItem}>
             <Link href="/menu">
-             
-                <FaPizzaSlice /> Menu
-              
+              <FaPizzaSlice /> Menu
             </Link>
           </li>
           <li className={styles.listItem}>
             <Link href="/blog">
-             
-                <FaPizzaSlice /> Blog
-              
+              <FaPizzaSlice /> Blog
             </Link>
           </li>
           <li className={styles.listItem}>
             <Link href="/contact">
-             
-                <FaPizzaSlice /> Contact
-              
+              <FaPizzaSlice /> Contact
             </Link>
           </li>
         </ul>
@@ -64,21 +75,22 @@ const Navbar = () => {
       <div className={styles.item}>
         <div className={styles.userarea}>
           <Link href="/login">
-         
-          <div className={styles.login}>
-            <FaUserAlt />
-          </div>
+            <div className={styles.login}>
+              <FaUserAlt />
+            </div>
           </Link>
+          <Link href="/cart">
           <div className={styles.cart}>
             <FaShoppingBasket />
-            <div className={styles.counter}>2</div>
-          </div>
-          <Link href="/sign">
-          <div className={styles.signin}>
-            <FaUserPlus />
+            {itemCount > 0 && <div className={styles.counter}>{itemCount}</div>}
           </div>
           </Link>
-         
+          
+          <Link href="/sign">
+            <div className={styles.signin}>
+              <FaUserPlus />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

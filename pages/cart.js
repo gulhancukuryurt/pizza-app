@@ -68,7 +68,7 @@ const Cart = () => {
                   <span className={styles.total}>${item.price}</span>
                 </td>
                 <td>
-      <button style={{padding:"10px", backgroundColor:"#f26d25", border:"none", cursor:"pointer"}} onClick={() => removeFromCart(index)}><FontAwesomeIcon style={{fontSize:"1.2rem"}} icon={faTrash} /></button>
+      <button style={{padding:"10px", backgroundColor:"#f26d25", border:"none", cursor:"pointer"}} className={styles.deleteBtn} onClick={() => removeFromCart(index)}><FontAwesomeIcon style={{fontSize:"1.2rem"}} icon={faTrash} /></button>
     </td>              </tr>
             ))}
           </tbody>

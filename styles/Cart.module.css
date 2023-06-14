@@ -1,6 +1,7 @@
 .container {
     margin: 40px;
     padding: 30px;
+    width: 100%;
     display: flex;
     text-align: center;
     align-items: center;
@@ -8,12 +9,12 @@
 
 .left {
   
-    flex: 2;
+   width: 50%;
 }
 
 .right {
  
-    flex: 1;
+    width: 50%;
 }
 
 .image {
@@ -45,24 +46,17 @@
     padding: 20px;
 }
 
-.extra {
-    font-style: italic;
-    padding: 20px;
-}
 
 .price {
     font-weight: bold;
     padding: 20px;
 }
 
-.quantity {
-    font-size: 1.2rem;
-    color: #f8bd11;
-}
+
 
 .wrapper {
     background-color: #f26d25;
-    width: 50%;
+    width: 70%;
     max-height: 300px;
     padding: 50px;
     display: flex;
@@ -99,3 +93,32 @@
     width: 100%;
     cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .wrapper {
+        width: 300px;
+        display: flex;
+        margin-left: -123px;
+    }
+
+   .price, .tr {
+       display: none;
+   }
+
+   .name, .price {
+    margin: -20px;
+   }
+
+.deleteBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  }

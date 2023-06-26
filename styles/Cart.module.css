@@ -12,7 +12,7 @@
 
 .left {
   
-   width: 50%;
+   width: 100%;
 }
 
 .right {
@@ -97,8 +97,51 @@
     width: 100%;
     cursor: pointer;
 }
+  .pay {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f8bd11;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-@media screen and (max-width: 600px) {
+  .userinfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .userinfo input {
+    padding:10px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid #f26d25;
+    
+  }
+
+  .amount {
+    display: flex;
+    flex-direction: column;
+    background-color: #f26d25;
+    padding: 30px;
+    margin: 20px;
+  }
+
+  .paymentButton {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .amount span {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 600px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -106,9 +149,9 @@
     }
 
     .wrapper {
-        width: 300px;
+        width: 330px;
         display: flex;
-        margin-left: -73px;
+        margin-left: -83px;
     }
 
    .price, .tr {
@@ -129,5 +172,18 @@
     align-items: center;
     justify-content: center;
 }
+.pay {
+    width: 330px;
+    display: flex;
+    margin-left: -83px;
+}
+.amount {
+    display: flex;
+    flex-direction: column;
+    background-color: #f26d25;
+    padding: 10px;
+    margin: 5px;
+  }
+
 
   }

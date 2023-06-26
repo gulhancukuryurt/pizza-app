@@ -4,6 +4,7 @@ import styles from '../styles/Cart.module.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FaCheck } from 'react-icons/fa';
 
 
 const Cart = () => {
@@ -12,6 +13,8 @@ const Cart = () => {
   const parsedCartItems = JSON.parse(cartItems || '[]');
 
   const [items, setItems] = useState([]);
+  const [pay, setPay] = useState(false);
+  const [payMsg, setPaymsg] = useState("Complete The Payment");
 
   useEffect(() => {
     const storedItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -19,7 +22,7 @@ const Cart = () => {
   }, []);
 
   const calculateSubtotal = (items) => {
-    return items.reduce((total, item) => total + item.price,0);
+    return items.reduce((total, item) => total + item.price, 0);
   };
 
   const calculateTotal = (items) => {
@@ -33,8 +36,27 @@ const Cart = () => {
     setItems(updatedCartItems);
     localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
   };
+
+  const handlePayment = () => {
+    const nameInput = document.getElementById('name');
+    const cardNumberInput = document.getElementById('cardnumber');
+    const expirationDateInput = document.getElementById('edate');
+    const cvvInput = document.getElementById('cvv');
+
+    if (
+      nameInput.value &&
+      cardNumberInput.value &&
+      expirationDateInput.value &&
+      cvvInput.value
+    ) {
   
-  
+      setPaymsg('Completed');
+     
+    }else {
+      setPaymsg("Do Not Leave Blank")
+    }
+  }
+
 
   return (
     <div className={styles.container}>
@@ -59,17 +81,17 @@ const Cart = () => {
                 <td>
                   <span className={styles.name}>{item.name}</span>
                 </td>
-               
+
                 <td>
                   <span className={styles.price}>${item.price}</span>
                 </td>
-               
+
                 <td>
                   <span className={styles.total}>${item.price}</span>
                 </td>
                 <td>
-      <button style={{padding:"10px", backgroundColor:"#f26d25", border:"none", cursor:"pointer"}} className={styles.deleteBtn} onClick={() => removeFromCart(index)}><FontAwesomeIcon style={{fontSize:"1.2rem"}} icon={faTrash} /></button>
-    </td>              </tr>
+                  <button style={{ padding: "10px", backgroundColor: "#f26d25", border: "none", cursor: "pointer" }} className={styles.deleteBtn} onClick={() => removeFromCart(index)}><FontAwesomeIcon style={{ fontSize: "1.2rem" }} icon={faTrash} /></button>
+                </td>              </tr>
             ))}
           </tbody>
         </table>
@@ -77,13 +99,31 @@ const Cart = () => {
       <div className={styles.right}>
         <div className={styles.wrapper}>
           <h2 className={styles.title}>CART TOTAL</h2>
-          
+
           <div className={styles.totalText}>
             <b className={styles.totalTextTitleTotal}>Total: ${calculateTotal(items)} </b>
             <hr />
           </div>
-          <button className={styles.button}>CHECKOUT NOW!</button>
+          <button className={styles.button} onClick={() => items.length > 0 ? setPay(true) : setPay(false)}>CHECKOUT NOW!</button>
         </div>
+        {
+          pay && (
+            <div className={styles.pay}>
+              <div className={styles.userinfo}>
+                <input id="name"type='text' placeholder='FullName'></input>
+                <input id="cardnumber" type='number' placeholder='Card Number'></input>
+                <input id="edate"type='text' placeholder='Expiration Date' />
+                <input  id="cvv" type='text' placeholder='CVV' />
+              </div>
+              <div className={styles.amount}>
+                <span>Total</span>
+                <span>${calculateTotal(items)}</span>
+                <button className={styles.paymentButton} onClick={handlePayment}>{payMsg}</button>
+              </div>
+
+            </div>
+          )
+        }
       </div>
     </div>
   );

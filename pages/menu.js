@@ -3,7 +3,9 @@ import styles from '../styles/Menu.module.css';
 import menuPizza from './menu.json';
 import Image from 'next/image';
 import TopButton from '@/components/TopButton'
-import { useRouter } from 'next/router';
+//import { useRouter } from 'next/router';
+import { FaCheck, FaShoppingBasket } from "react-icons/fa";
+import Link from 'next/link';
 
 
 function Menu() {
@@ -14,7 +16,8 @@ function Menu() {
   const [cartItems, setCartItems] = useState([]);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const router = useRouter();
+  const [msg, setMsg] = useState(false);
+  //const router = useRouter();
 
   // Kategorilere göre pizzaları filtrelemek için bir fonksiyon
   const filterPizzasByCategory = () => {
@@ -41,8 +44,12 @@ function Menu() {
     items.push(pizzaItem);
     localStorage.setItem('cartItems', JSON.stringify(items));
     setCartItems(items); // Update the cartItems state with the updated array
-  
-    router.push('/cart');
+   // router.push('/cart');
+   setMsg(true);
+   setTimeout(() => {
+     setMsg(false)
+   },4000)
+
   };
   
 
@@ -80,17 +87,24 @@ function Menu() {
             <h2 className={styles.price}>$ {pizza.price}</h2>
             <button className={styles.buy} onClick={() => addToCart(pizza)}>
               Buy Now
-            </button>         
+            </button>  
              </div>
         ))}
       </div>
+      {msg && <div className={styles.main}>
+        <p className={styles.info}><FaCheck/> Pizza added to cart</p>
+        <Link href="/cart">
+        <button className={styles.btn}>
+          <FaShoppingBasket className={styles.icon}/></button>
+        </Link>
+        </div>}       
+
       <div className={styles.pagination}>
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
             className={`${styles.page} ${currentPage === index + 1 ? styles.focus : ''}`}
-            onClick={() => handlePageChange(index + 1)}
-          >
+            onClick={() => handlePageChange(index + 1)}>
             {index + 1}
           </button>
         ))}

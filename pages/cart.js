@@ -53,7 +53,7 @@ const Cart = () => {
               <tr key={index}>
                 <td>
                   <div className={styles.image}>
-                    <Image src={item.image} alt={item.name} width="150" height="150" />
+                    <Image src={item.image} className={styles.img} alt={item.name} width="150" height="150" />
                   </div>
                 </td>
                 <td>

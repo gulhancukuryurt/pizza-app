@@ -7,7 +7,7 @@ import Blog from './Blog'
 const BlogPage = () => {
   return (
     <div className={styles.container}>
-         <h1 className={styles.title}> Pizza Blog <Image src='/img/blog.png' className={styles.img} width={80} height={80}></Image> </h1>
+         <h1 className={styles.title}> Pizza Blog <Image src='/img/blog.png' alt='blog' className={styles.img} width={80} height={80}></Image> </h1>
      <div className={styles.wrapper}>
         <Blog/>
         <Blog/>

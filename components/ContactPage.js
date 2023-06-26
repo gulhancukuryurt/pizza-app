@@ -9,7 +9,7 @@ const ContactPage = () => {
     <div className={styles.container}>
       <div className={styles.contact}>
         <div className={styles.left}>
-          <Image src='/img/pizzarest.jpeg' className={styles.img} width={500} height={750}></Image>
+          <Image src='/img/pizzarest.jpeg' alt='restorant' className={styles.img} width={500} height={750}></Image>
         </div>
         <div className={styles.right}>
           <form className={styles.form}>
@@ -25,7 +25,8 @@ const ContactPage = () => {
               }
             }}>
               Send Message <FaRegPaperPlane />
-            </button>                        <p className={styles.msg}>{msg}</p>
+            </button>                        
+            <p className={styles.msg}>{msg}</p>
 
           </form>
 

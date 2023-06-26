@@ -39,7 +39,7 @@ const Featured = () => {
 
       <div className={styles.wrapper}>
         <div className={styles.imgContainer}>
-          <Image src={images1[index1]} width="1900" height="700" />
+          <Image src={images1[index1]} width="1900" height="700" alt='image1' />
         </div>
       </div>
 

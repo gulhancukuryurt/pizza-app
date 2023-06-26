@@ -36,7 +36,7 @@ function Blog() {
               <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
               <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
               <div className={styles.card_creator}>
-                <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+                <Image src='/img/chef.png' alt='chef' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ function Blog() {
       }
       <div className={styles.card}>
         <figure className={styles.card_thumb}>
-          <img src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
+          <Image src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
             <h2 className={styles.card_title}>This Is Your Body And Brain On Coffee</h2>
             <p className={styles.card_snippet}>Drinking more caffeine during the coronavirus lockdown? Here's how it can affect you over time and advice on making it better for you.</p>
@@ -60,7 +60,7 @@ popupIsOpen && (
     <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
     <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
     <div className={styles.card_creator}>
-      <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+      <Image src='/img/chef.png' alt='chef1' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
     </div>
   </div>
 </div>
@@ -68,7 +68,7 @@ popupIsOpen && (
 }
       <div className={styles.card}>
         <figure className={styles.card_thumb}>
-          <img src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
+          <Image src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
             <h2 className={styles.card_title}>Why You Should Bring Your Dog To Work</h2>
             <p className={styles.card_snippet}>On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
@@ -84,7 +84,7 @@ popupIsOpen && (
               <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
               <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
               <div className={styles.card_creator}>
-                <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+                <Image src='/img/chef.png' alt='chef2' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ popupIsOpen && (
     <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
     <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
     <div className={styles.card_creator}>
-      <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+      <Image src='/img/chef.png' alt='chef3' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
     </div>
   </div>
 </div>
@@ -116,7 +116,7 @@ popupIsOpen && (
 }
       <div className={styles.card}>
         <figure className={styles.card_thumb}>
-          <img src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
+          <Image src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
             <h2 className={styles.card_title}>This Is Your Body And Brain On Coffee</h2>
             <p className={styles.card_snippet}>Drinking more caffeine during the coronavirus lockdown? Here's how it can affect you over time and advice on making it better for you.</p>
@@ -132,7 +132,7 @@ popupIsOpen && (
               <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
               <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
               <div className={styles.card_creator}>
-                <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+                <Image src='/img/chef.png' alt='chef4' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
               </div>
             </div>
           </div>
@@ -140,7 +140,7 @@ popupIsOpen && (
       }
       <div className={styles.card}>
         <figure className={styles.card_thumb}>
-          <img src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
+          <Image src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
             <h2 className={styles.card_title}>Why You Should Bring Your Dog To Work</h2>
             <p className={styles.card_snippet}>On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
@@ -156,7 +156,7 @@ popupIsOpen && (
     <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
     <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
     <div className={styles.card_creator}>
-      <Image src='/img/chef.png' className={styles.chef} width={50} height={50} alt=''></Image><span className={styles.name}>by Pizza Chef</span>
+      <Image src='/img/chef.png' alt='chef5' className={styles.chef} width={50} height={50} ></Image><span className={styles.name}>by Pizza Chef</span>
     </div>
   </div>
 </div>
@@ -180,7 +180,7 @@ popupIsOpen && (
     <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
     <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
     <div className={styles.card_creator}>
-      <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+      <Image src='/img/chef.png' alt='chef6' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
     </div>
   </div>
 </div>
@@ -188,7 +188,7 @@ popupIsOpen && (
 }
       <div className={styles.card}>
         <figure className={styles.card_thumb}>
-          <img src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
+          <Image src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
             <h2 className={styles.card_title}>This Is Your Body And Brain On Coffee</h2>
             <p className={styles.card_snippet}>Drinking more caffeine during the coronavirus lockdown? Here's how it can affect you over time and advice on making it better for you.</p>
@@ -204,7 +204,7 @@ popupIsOpen && (
               <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
               <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
               <div className={styles.card_creator}>
-                <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+                <Image src='/img/chef.png' alt='chef7' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ popupIsOpen && (
       }
       <div className={styles.card}>
         <figure className={styles.card_thumb}>
-          <img src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
+          <Image src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
             <h2 className={styles.card_title}>Why You Should Bring Your Dog To Work</h2>
             <p className={styles.card_snippet}>On Friday, offices around the country celebrated the 15th annual Take Your Dog to Work Day. Though the event's primary goal is to raise awareness for pet adoption, the unanticipated impact may be a slightly more relaxing work environment for any office choosing to participate.</p>
@@ -228,7 +228,7 @@ popupIsOpen && (
     <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
     <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
     <div className={styles.card_creator}>
-      <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+      <Image src='/img/chef.png' alt='chef8' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
     </div>
   </div>
 </div>

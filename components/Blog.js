@@ -11,7 +11,7 @@ const Blog = () => {
             <div className={styles.card}>
                 <div className={styles.left}>
                     <div className={styles.card_img}>
-                        <Image src="/img/pizza.webp" className={styles.img} width={290} height={340}></Image>
+                        <Image src="/img/pizza.webp" alt='pizza1' className={styles.img} width={290} height={340}></Image>
                     </div>
                     <a href='' className={styles.card_link}></a>
                 </div>
@@ -25,7 +25,7 @@ const Blog = () => {
                         <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate massa at mi sollicitudin laoreet.  </p>
                        
                         <div className={styles.card_creator}>
-                            <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image> <a href='' className={styles.pizzacreate}> by Pizza Chef</a>
+                            <Image src='/img/chef.png' alt='pizza2' className={styles.chef} width={50} height={50}></Image> <a href='' className={styles.pizzacreate}> by Pizza Chef</a>
                             <Link href="/blog">
                             <button className={styles.btn}>Read More <FaChevronRight/></button>
                             </Link>

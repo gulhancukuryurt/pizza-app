@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '../styles/Blog.module.css'
 import Image from 'next/image'
 import { FaChevronRight } from "react-icons/fa";
+import Link from 'next/link'
 
 
 const Blog = () => {
@@ -25,8 +26,9 @@ const Blog = () => {
                        
                         <div className={styles.card_creator}>
                             <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image> <a href='' className={styles.pizzacreate}> by Pizza Chef</a>
+                            <Link href="/blog">
                             <button className={styles.btn}>Read More <FaChevronRight/></button>
-
+                            </Link>
                             </div>
 
                     </div>

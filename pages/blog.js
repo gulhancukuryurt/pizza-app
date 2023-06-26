@@ -156,7 +156,7 @@ popupIsOpen && (
     <p className={styles.info}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla egestas, nisi a condimentum finibus, mauris magna consequat magna, eget pretium odio felis sed nunc. Donec sapien neque, vehicula sit amet justo vel, efficitur sagittis mauris. Sed tempor odio quis dui pretium finibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse aliquet nec nisl cursus auctor. Curabitur eros libero, accumsan eu turpis eget, placerat pellentesque nisl. Phasellus elementum semper commodo. Maecenas id ex rutrum, lobortis nunc non, rutrum ipsum. Cras euismod tempus mi, eu consectetur ipsum convallis nec. Nunc vel est eu nisi ullamcorper egestas. Fusce sit amet neque blandit, gravida tortor vitae, tincidunt sapien.</p>
     <button className={styles.btn} onClick={popupClose}><FaRegTimesCircle /></button>
     <div className={styles.card_creator}>
-      <Image src='/img/chef.png' className={styles.chef} width={50} height={50}></Image><span className={styles.name}>by Pizza Chef</span>
+      <Image src='/img/chef.png' className={styles.chef} width={50} height={50} alt=''></Image><span className={styles.name}>by Pizza Chef</span>
     </div>
   </div>
 </div>

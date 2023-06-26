@@ -47,7 +47,7 @@ function Sign() {
     <div className={styles.container}>
       <div className={styles.left}>
       <div className={styles.imgWrapper}>
-        <Image className={styles.img} src="/img/pizzarest2.webp" width={600} height={700} />
+        <Image className={styles.img} src="/img/pizzarest2.webp" width={600} height={700} alt='' />
         </div>
       </div>
       <div className={styles.right}>

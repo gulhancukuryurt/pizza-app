@@ -43,7 +43,7 @@ function Login() {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
-        <Image className={styles.img} src="/img/pizzarest1.jpg" width={600} height={700} />
+        <Image className={styles.img} src="/img/pizzarest1.jpg" width={600} height={700} alt='' />
       </div>
       <div className={styles.right}>
         <h2 className={styles.title}>Login</h2>

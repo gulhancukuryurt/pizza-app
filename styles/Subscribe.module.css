@@ -65,9 +65,16 @@
     cursor: pointer;
   }
 
-  .mailForm {
+.mailForm {
     position: relative;
     display: inline-block;
     width: 45%;
   }
- 
+.msg {
+  color: #e4c157;
+  font-size: 1.3rem;
+  margin-top: -60px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}

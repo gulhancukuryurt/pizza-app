@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from '../styles/Sign.module.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import {motion} from "framer-motion";
 
 function Sign() {
   const initialValues = {
@@ -44,7 +45,10 @@ function Sign() {
   };
 
   return (
-    <div className={styles.container}>
+    <motion.div
+    initial= {{opacity:0, translateY:30}}
+    animate = {{opacity:1, translateY:0}}
+    className={styles.container}>
       <div className={styles.left}>
       <div className={styles.imgWrapper}>
         <Image className={styles.img} src="/img/pizzarest2.webp" width={600} height={700} alt='' />
@@ -110,7 +114,7 @@ function Sign() {
         </Formik>
         </div>
         
-    </div>
+    </motion.div>
   );
 }
 

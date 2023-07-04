@@ -2,11 +2,14 @@ import React from 'react'
 import styles from '../styles/ContactP.module.css'
 import { FaRegPaperPlane, FaMapMarkerAlt, FaPhoneAlt, FaRegEnvelope } from "react-icons/fa";
 import { FaInstagram, FaYoutube, FaFacebook } from "react-icons/fa";
-
+import { motion } from "framer-motion"
 
 function contact() {
     return (
-        <div className={styles.container}>
+        <motion.div
+            initial={{ opacity: 0, translateY: 30 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            className={styles.container}>
             <div className={styles.contact}>
                 <div className={styles.left}>
                     <div className={styles.address}>
@@ -48,7 +51,7 @@ function contact() {
 
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

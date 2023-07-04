@@ -3,7 +3,7 @@ import styles from '../styles/BlogMenuPage.module.css';
 import Image from 'next/image';
 import TopButton from '@/components/TopButton'
 import { FaRegTimesCircle } from "react-icons/fa";
-
+import {motion} from "framer-motion";
 
 function Blog() {
 
@@ -16,9 +16,33 @@ function Blog() {
   const popupClose = () => {
     setPopupIsOpen(false)
   }
+  const container = {
+    visible: {
+      transition: {
+        //delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  }
+    
+  const item = {
+    hidden: { 
+      opacity: 0,
+    translateY:20 },
+    visible: {
+      opacity: 1,
+      translateY:0
+    }
+  }
   return (
-    <div className={styles.container}>
-      <div className={styles.card}>
+    <motion.div 
+    initial="hidden"
+    animate="visible"
+    variants={container}
+    className={styles.container}>
+      <motion.div 
+      variants={item}
+      className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest1.jpg" alt="Picture by Kyle Cottrell" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -28,7 +52,7 @@ function Blog() {
 
           </figcaption>
         </figure>
-      </div>
+      </motion.div>
       {
         popupIsOpen && (
           <div className={styles.popup}>
@@ -42,7 +66,9 @@ function Blog() {
           </div>
         )
       }
-      <div className={styles.card}>
+      <motion.div 
+      variants={item}
+      className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -52,7 +78,7 @@ function Blog() {
 
 </figcaption>
 </figure>
-</div>
+</motion.div>
 {
 popupIsOpen && (
 <div className={styles.popup}>
@@ -66,7 +92,9 @@ popupIsOpen && (
 </div>
 )
 }
-      <div className={styles.card}>
+      <motion.div 
+      variants={item}
+      className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -76,7 +104,7 @@ popupIsOpen && (
 
           </figcaption>
         </figure>
-      </div>
+      </motion.div>
       {
         popupIsOpen && (
           <div className={styles.popup}>
@@ -90,7 +118,9 @@ popupIsOpen && (
           </div>
         )
       }
-      <div className={styles.card}>
+      <motion.div 
+      variants={item}
+      className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest1.jpg" alt="Picture by Kyle Cottrell" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -100,7 +130,7 @@ popupIsOpen && (
 
 </figcaption>
 </figure>
-</div>
+</motion.div>
 {
 popupIsOpen && (
 <div className={styles.popup}>
@@ -114,7 +144,9 @@ popupIsOpen && (
 </div>
 )
 }
-      <div className={styles.card}>
+      <motion.div 
+      variants={item}
+      className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -124,7 +156,7 @@ popupIsOpen && (
 
           </figcaption>
         </figure>
-      </div>
+      </motion.div>
       {
         popupIsOpen && (
           <div className={styles.popup}>
@@ -138,7 +170,9 @@ popupIsOpen && (
           </div>
         )
       }
-      <div className={styles.card}>
+      <motion.div
+      variants={item}
+       className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -148,7 +182,7 @@ popupIsOpen && (
 
 </figcaption>
 </figure>
-</div>
+</motion.div>
 {
 popupIsOpen && (
 <div className={styles.popup}>
@@ -162,7 +196,9 @@ popupIsOpen && (
 </div>
 )
 }
-      <div className={styles.card}>
+      <motion.div
+      variants={item}
+       className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest1.jpg" alt="Picture by Kyle Cottrell" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -172,7 +208,7 @@ popupIsOpen && (
 
 </figcaption>
 </figure>
-</div>
+</motion.div>
 {
 popupIsOpen && (
 <div className={styles.popup}>
@@ -186,7 +222,9 @@ popupIsOpen && (
 </div>
 )
 }
-      <div className={styles.card}>
+      <motion.div
+      variants={item} 
+      className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest2.webp" alt="Picture by Nathan Dumlao" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -196,7 +234,7 @@ popupIsOpen && (
 
           </figcaption>
         </figure>
-      </div>
+      </motion.div>
       {
         popupIsOpen && (
           <div className={styles.popup}>
@@ -210,7 +248,9 @@ popupIsOpen && (
           </div>
         )
       }
-      <div className={styles.card}>
+      <motion.div
+      variants={item}
+       className={styles.card}>
         <figure className={styles.card_thumb}>
           <Image src="/img/pizzarest.jpeg" alt="Picture by Daniel Lincoln" className={styles.card_img} width={300} height={400} />
           <figcaption className={styles.card_caption}>
@@ -220,7 +260,7 @@ popupIsOpen && (
 
 </figcaption>
 </figure>
-</div>
+</motion.div>
 {
 popupIsOpen && (
 <div className={styles.popup}>
@@ -235,7 +275,7 @@ popupIsOpen && (
 )
 }
       <TopButton />
-    </div>
+    </motion.div>
 
   )
 }

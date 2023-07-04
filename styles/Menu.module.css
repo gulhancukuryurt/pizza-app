@@ -112,7 +112,7 @@
   border: 1px solid #f57c00;
 }
 
-.categories .category:focus {
+.focus {
   background-color: #f57c00;
 }
 @media screen and (max-width: 600px) {

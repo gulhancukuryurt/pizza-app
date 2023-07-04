@@ -6,6 +6,7 @@ import TopButton from '@/components/TopButton'
 //import { useRouter } from 'next/router';
 import { FaCheck, FaShoppingBasket } from "react-icons/fa";
 import Link from 'next/link';
+import { motion } from "framer-motion"
 
 
 function Menu() {
@@ -49,13 +50,32 @@ function Menu() {
    setTimeout(() => {
      setMsg(false)
    },4000)
-
   };
+
+  const container = {
+    visible: {
+      transition: {
+        //delayChildren: 0.3,
+        staggerChildren: 0.2
+      }
+    }
+  }
+    
+  const item = {
+    hidden: { 
+      opacity: 0,
+    translateY:20 },
+    visible: {
+      opacity: 1,
+      translateY:0
+    }
+  }
   
-
-
   return (
-    <div className={styles.container}>
+    <motion.div 
+    initial={{opacity:0 }}
+    animate={{ opacity:1 }}
+    className={styles.container}>
       <h2 className={styles.title}>Menü List</h2>
       <div className={styles.categories}>
         <button
@@ -78,9 +98,16 @@ function Menu() {
         </button>
 
       </div>
-      <div className={styles.cards}>
+      <motion.div 
+      initial="hidden"
+      animate="visible"
+      variants={container}
+      className={styles.cards}>
         {filterPizzasByCategory().map((pizza, id) => (
-          <div key={id} className={styles.card}>
+          <motion.div 
+          variants={item}
+          key={id} 
+          className={styles.card}>
             <Image className={styles.pizzaimg} src={pizza.image} width={500} height={200} alt={pizza.name} />
             <h3 className={styles.pizzaname}>{pizza.name}</h3>
             <h4 className={styles.desc}>{pizza.description}</h4>
@@ -88,9 +115,9 @@ function Menu() {
             <button className={styles.buy} onClick={() => addToCart(pizza)}>
               Buy Now
             </button>  
-             </div>
+             </motion.div>
         ))}
-      </div>
+      </motion.div>
       {msg && <div className={styles.main}>
         <p className={styles.info}><FaCheck/> Pizza added to cart</p>
         <Link href="/cart">
@@ -110,7 +137,7 @@ function Menu() {
         ))}
       </div>
       <TopButton />
-    </div>
+    </motion.div>
   );
 }
 

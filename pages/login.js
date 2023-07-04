@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from '../styles/Login.module.css';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import {motion} from "framer-motion"
 
 function Login() {
   const initialValues = {
@@ -41,7 +42,10 @@ function Login() {
   };
 
   return (
-    <div className={styles.container}>
+    <motion.div
+    initial= {{opacity:0, translateY:30}}
+    animate = {{opacity:1, translateY:0}}
+     className={styles.container}>
       <div className={styles.left}>
         <Image className={styles.img} src="/img/pizzarest1.jpg" width={600} height={700} alt='' />
       </div>
@@ -75,7 +79,7 @@ function Login() {
           </Form>
         </Formik>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

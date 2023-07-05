@@ -4,8 +4,9 @@ import styles from '../styles/Cart.module.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { FaCheck,FaChevronRight } from 'react-icons/fa';
+import { FaCheck, FaChevronRight } from 'react-icons/fa';
 import { motion } from "framer-motion";
+import Link from 'next/link';
 
 const Cart = () => {
   const router = useRouter();
@@ -15,7 +16,7 @@ const Cart = () => {
   const [items, setItems] = useState([]);
   const [pay, setPay] = useState(false);
   const [payMsg, setPaymsg] = useState("Complete The Payment");
-  const [prod, setProd]= useState(false);
+  const [prod, setProd] = useState(false);
 
   useEffect(() => {
     if (items.length === 0) {
@@ -24,7 +25,7 @@ const Cart = () => {
       setProd(false);
     }
   }, [items]);
-  
+
 
   useEffect(() => {
     const storedItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -45,11 +46,11 @@ const Cart = () => {
     updatedCartItems.splice(index, 1);
     setItems(updatedCartItems);
     localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
-    if(updatedCartItems.length === 0) {
-      
-       setProd(true);
-       
-    }else {
+    if (updatedCartItems.length === 0) {
+
+      setProd(true);
+
+    } else {
       setProd(false)
     }
   };
@@ -80,21 +81,17 @@ const Cart = () => {
       initial={{ opacity: 0, translateY: 30 }}
       animate={{ opacity: 1, translateY: 0 }}
       className={styles.container}>
-        {
-          prod ?  (
-            <div className={styles.product}>
-            <h1>Product Not Found</h1>
-            <motion.button
-              className={styles.prodbtn}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              Menu <FaChevronRight/>
-            </motion.button>
+      {
+        prod ? (
+          <div className={styles.product}>
+            <h1 className={styles.proinfo}>Product Not Found</h1>
+            <Link href="/menu">
+            <button className={styles.prodbtn}> MENU <FaChevronRight/> </button>
+            </Link>
           </div>
-          ): (
+        ) : (
 
-            <div className={styles.table1}>
+          <div className={styles.table1}>
             <table className={styles.table}>
               <thead>
                 <tr className={styles.tr}>
@@ -115,11 +112,11 @@ const Cart = () => {
                     <td>
                       <span className={styles.name}>{item.name}</span>
                     </td>
-    
+
                     <td>
                       <span className={styles.price}>${item.price}</span>
                     </td>
-    
+
                     <td>
                       <span className={styles.total}>${item.price}</span>
                     </td>
@@ -130,9 +127,9 @@ const Cart = () => {
               </tbody>
             </table>
           </div>
-          ) 
-        } 
-    
+        )
+      }
+
       <div className={styles.right}>
         <div className={styles.wrapper}>
           <h2 className={styles.title}>CART TOTAL</h2>

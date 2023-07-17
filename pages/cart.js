@@ -3,8 +3,9 @@ import { useRouter } from 'next/router';
 import styles from '../styles/Cart.module.css';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { faL, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FaCheck, FaChevronRight } from 'react-icons/fa';
+import { FaRegTimesCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import Link from 'next/link';
 
@@ -142,9 +143,12 @@ const Cart = () => {
         </div>
         {
           pay && (
+            <div className={styles.container2}>
             <div className={styles.pay}>
               <div className={styles.userinfo}>
+              <button className={styles.btn} onClick={() => setPay(false)}><FaRegTimesCircle /></button>
                 <input id="name" type='text' placeholder='FullName'></input>
+                <input id="address" type='text' placeholder='Address' />
                 <input id="cardnumber" type='number' placeholder='Card Number'></input>
                 <input id="edate" type='text' placeholder='Expiration Date' />
                 <input id="cvv" type='text' placeholder='CVV' />
@@ -155,6 +159,7 @@ const Cart = () => {
                 <button className={styles.paymentButton} onClick={handlePayment}>{payMsg}</button>
               </div>
 
+            </div>
             </div>
           )
         }

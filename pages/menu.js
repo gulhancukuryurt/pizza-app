@@ -19,13 +19,15 @@ function Menu() {
   const endIndex = startIndex + itemsPerPage;
   const [msg, setMsg] = useState(false);
   //const router = useRouter();
+  const [searchInput, setSearchInput] = useState("");
+  const [filteredPizzas, setFilteredPizzas] = useState(menuPizza.pizzas);
 
   // Kategorilere göre pizzaları filtrelemek için bir fonksiyon
   const filterPizzasByCategory = () => {
     if (selectedCategory === 'all') {
-      return menuPizza.pizzas.slice(startIndex, endIndex);
+      return filteredPizzas.slice(startIndex, endIndex);
     } else {
-      return menuPizza.pizzas
+      return filteredPizzas
         .filter((pizza) => pizza.category === selectedCategory)
         .slice(startIndex, endIndex);
     }
@@ -70,6 +72,17 @@ function Menu() {
       translateY:0
     }
   }
+
+  const handleChange = (e) => {
+    const inputValue = e.target.value.toLowerCase();
+    setSearchInput(inputValue); // Inputtaki değeri güncelle
+
+    // Tüm pizzaları filtrele
+    const filteredData = menuPizza.pizzas.filter((pizza) =>
+      pizza.name.toLowerCase().includes(inputValue)
+    );
+    setFilteredPizzas(filteredData);
+  };
   
   return (
     <motion.div 
@@ -77,6 +90,9 @@ function Menu() {
     animate={{ opacity:1 }}
     className={styles.container}>
       <h2 className={styles.title}>Menü List</h2>
+      
+      <input className={styles.searchArea} type="text" placeholder="Search" value={searchInput} onChange={handleChange} />
+      
       <div className={styles.categories}>
         <button
           className={`${styles.category} ${selectedCategory === 'all' ? styles.focus : ''}`}

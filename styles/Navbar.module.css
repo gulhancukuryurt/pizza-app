@@ -19,6 +19,7 @@
     height: 80px;
     margin-left: 80px;
     border-radius: 5px;
+    font-size: 12px;
 }
 
 .contactmsg,
@@ -59,7 +60,7 @@
     padding: 20px;
     margin: 45px;
     font-weight: 50;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
 }
 
@@ -125,7 +126,7 @@
 }
 
 
-@media screen and (max-width: 1388px) {
+@media screen and (max-width: 888px) {
     .menuIcon {
         display: block;
         font-size: 2rem;

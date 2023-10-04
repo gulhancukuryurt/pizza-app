@@ -50,6 +50,7 @@
     width: 20%;
     padding: 10px;
     text-align: center;
+    margin-left: -20px;
 }
 
 .number {
@@ -170,7 +171,9 @@
     font-size: 15px;
     padding: 5px;
 }
-
+.mailForm {
+    margin-left: -50px;
+}
 .hours {
     color: #dba80e;
     margin-bottom: 10px;

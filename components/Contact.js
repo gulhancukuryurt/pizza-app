@@ -1,16 +1,15 @@
 import React from 'react'
 import styles from '../styles/Contact.module.css'
 import Image from 'next/image'
-import ContactPage from './ContactPage'
 
 
 const Contact = () => {
   return (
     <div className={styles.container}>
-         <h1 className={styles.title}> Contact Us <Image src='/img/send1.png' alt='send' className={styles.img} width={50} height={50}></Image>  </h1>
-     <div className={styles.wrapper}>
-        <ContactPage/>
-     </div>
+      <div className={styles.company}>
+      <h1 className={styles.main}>LOOKİNG TO FEED A GROUP</h1>
+      <h2 className={styles.mainp}>WE HAVE YOU COVERED</h2>
+      </div>
     </div>
   )
 }

@@ -1,34 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 .container {
     width: 100%;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    text-align: center;
-}
-
-.title {
-    letter-spacing: 4px;
-    margin-bottom: 20px;
-    color:#f8bd11;
-    font-weight: bold;
-    font-size: 2.5rem;
-    background-color: #5a5135;
-    width: 98%;
+    position: relative;
     text-align: center;
     font-family: 'Special Elite', cursive;
+    height: 550px;
+
 }
 
-.wrapper {
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    height: 100%;
+    background: url('https://pizzatomorrow.com/wp-content/uploads/2021/11/HeroBackground_PT.jpg');
+    background-size: cover;
+    background-position: center;
+    background-clip: padding-box;
+    opacity: 1;
+    z-index: -1;
 }
 
-.img{
-    margin-bottom: -5px;
+.company {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 250px;
+    left: 250px;
+    
+}
+
+.main {
+    color: #f26d25;
+    letter-spacing: 8px;
+}
+
+.mainp {
+    color: #f8bd11;
+    padding: 10px;
 }

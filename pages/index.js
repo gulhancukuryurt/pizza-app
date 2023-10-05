@@ -44,7 +44,6 @@ useEffect(()=> {
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2094/2094661.png" />
       </Head>
       <Featured/>
-      <PizzaList/>
       <BlogPage/>
       <Contact/>
       <Subscribe/>

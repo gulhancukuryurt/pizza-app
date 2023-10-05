@@ -143,6 +143,7 @@
   background-color: rgb(104, 97, 97);
   align-items: center;
   border: 5px solid #ff9800;
+  z-index: 1000;
 }
 .info{
   text-align: center;

@@ -27,7 +27,7 @@ const Blog = () => {
                         <div className={styles.card_creator}>
                             <Image src='/img/chef.png' alt='pizza2' className={styles.chef} width={50} height={50}></Image> <a href='' className={styles.pizzacreate}> by Pizza Chef</a>
                             <Link href="/blog">
-                            <button className={styles.btn}>Read More <FaChevronRight/></button>
+                            <button className={styles.btn}>Read<FaChevronRight/></button>
                             </Link>
                             </div>
 

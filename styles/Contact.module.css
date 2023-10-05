@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 .container {
     width: 100%;
     display: flex;
@@ -30,18 +31,53 @@
 .company {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     top: 250px;
     left: 250px;
-    
+
 }
 
 .main {
     color: #f26d25;
-    letter-spacing: 8px;
+    letter-spacing: 2px;
 }
 
 .mainp {
     color: #f8bd11;
-    padding: 10px;
+    padding: 20px;
 }
+
+.btn {
+    width: 200px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f26d25;
+    color: #312606;
+    border: none;
+    transition: background-color 0.5s ease;
+    font-family: 'Special Elite', cursive;
+    letter-spacing: 5px;
+
+}
+
+.icon {
+    opacity:0;
+    font-size: 12px;
+}
+
+.btn:hover  {
+    background-color: #f8bd11;
+    color: #79310a;
+}
+.btn:hover .icon  {
+    opacity: 1;
+    transform: translateX(15px);
+    transition-delay:0.8s;
+    transition: transform 0.5s ease-in;
+
+}
+
+

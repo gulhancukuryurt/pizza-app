@@ -8,13 +8,13 @@
     color:#f8bd11;
     text-align: center;
     margin: 15px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
  }
 
 
 .container {
-  max-width: 650px;
+  max-width: 580px;
   display: flex;
   margin: 20px;
   flex-flow: row wrap;

@@ -44,9 +44,9 @@ const Subscribe = () => {
           </figure>
 
         </div>
-        <figure className={styles.gallery6}>
+        {/* <figure className={styles.gallery6}>
           <Image src={gallery6} alt='gallery1' width={250} height={420}></Image>
-          </figure>
+          </figure> */}
         </div>
       </div>
      

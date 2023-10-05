@@ -1,8 +1,7 @@
 import React from 'react'
 import styles from '../styles/PizzaCard.module.css'
 import Image from 'next/image'
-import { FaShoppingCart } from "react-icons/fa";
-import Link from 'next/link';
+
 
 
 const PizzaCard = () => {
@@ -18,6 +17,7 @@ const PizzaCard = () => {
      <p className={styles.card_body}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </p>
      <div className={styles.card_price}>$19.90</div>        
      </div>
+    
     
      
      </div>

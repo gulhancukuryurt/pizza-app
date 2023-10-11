@@ -1,4 +1,4 @@
-import React, { use, useState } from 'react'
+import React, {useState } from 'react'
 import styles from '../styles/BlogMenuPage.module.css';
 import Image from 'next/image';
 import TopButton from '@/components/TopButton'

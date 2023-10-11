@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+.cardslider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .cardMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    height: 550px;
+
+  }
+
+  .menu {
+    margin-bottom: 30px;
+  }
+
+.title {
+    font-family: 'Tilt Neon', sans-serif;
+    letter-spacing: 5px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.menubtn {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #f26d25;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 1.2rem;
+    
+}
+.iconp {
+    opacity:0;
+    
+}
+
+.menubtn:hover .iconp {
+    opacity: 1;
+    transform: translateX(65px) rotate(225deg);
+    transition-delay:0.8s;
+    transition: transform 0.5s ease-in;
+}
+
+.menubtn:hover {
+    background-color: rgb(233, 94, 20);
+    box-shadow: rgba(233, 136, 136, 0.24) 0px 3px 8px;
+
+}
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+  }
+  
+  .card {
+    margin: 0 10px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+   
+  }
+
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(2px);
+}
+  
+  .card .img {
+    margin-bottom: 10px; 
+  }
+  
+ 
+  .btn {
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #c0bbab;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn:hover {
+    background-color: #79310a; 
+  }
+  .icon {
+    font-size: 24px;
+  }
+  

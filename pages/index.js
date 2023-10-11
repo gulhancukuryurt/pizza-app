@@ -9,6 +9,7 @@ import Subscribe from '@/components/Subscribe'
 import TopButton from '@/components/TopButton'
 import {useState, useEffect} from 'react'
 import {motion} from 'framer-motion'
+import Slider from '@/components/Slider'
 
  
 const inter = Inter({ subsets: ['latin'] })
@@ -44,6 +45,7 @@ useEffect(()=> {
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2094/2094661.png" />
       </Head>
       <Featured/>
+      <Slider/>
       <BlogPage/>
       <Contact/>
       <Subscribe/>
